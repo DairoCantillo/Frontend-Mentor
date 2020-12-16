@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    
+}
+:root {
+    /*Primary*/
+    --main-bg-color: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    /*Neutral*/
+    --Dark-gray: hsl(0, 0%, 59%);
+  }
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); font-size: 18px;}
+  body{
+    background-color: var(--main-bg-color);
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+    background-position: top -32rem left -15rem, bottom -38rem right -15rem;
+    transition: 2s ;
+    background-repeat: no-repeat;
+  }
+  .profile-card{
+      margin: 140px auto;
+      width: 380px;
+      text-align: center;
+      display: flex;
+      flex-flow: column;
+      background-color: white;
+      border-radius: 1rem;
+      overflow: hidden;
+  }
+  .profile-card h2{ 
+      color: var(--Very-dark-desaturated-blue);
+  }
+  .profile-card h2 span{
+      font-weight: 400;
+  }
+  span{
+      color: var(--Dark-gray);
+  }
+  .avatar {
+      position: relative;
+      margin: 0 auto;
+      z-index: 2;
+      top:-50px;
+      border-radius: 100%;
+      background-color: white;
+  }
+  .avatar img{
+      border-radius: 100%;
+      border: 5px solid white;
+  }
+  header{
+      background-image: url("../images/bg-pattern-card.svg");
+      height: 140px;
+  }
+  .content{
+    position: relative;
+    margin: 0 auto;
+    z-index: 2;
+    top:-30px
+  }
+  .content h2{
+    margin: 0 auto 1rem  auto ;
+    font-weight: 700;
+  }
+
+  footer{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      width: 80%;
+      margin: 0px auto 20px auto;
+      padding: 10px;
+      text-align: center;
+  }
+  footer  h2{
+      margin:10px 0 ;
+  }
+  footer span{
+    font-weight: 400;
+  }
+  
+@media (max-width:600px){
+    body{
+        transition: 2s;
+        background-position: top -40rem left -45rem, bottom -40rem right -45rem;
+      }
+      .profile-card{ 
+          width: 350px;
+        }
+       
+}
